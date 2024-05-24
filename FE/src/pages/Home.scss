@@ -1,0 +1,227 @@
+.bg_img {
+  background-image: url("https://preview.colorlib.com/theme/wines/images/hero_2.jpg");
+  height: 800px;
+  width: 60%;
+  margin: auto;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: relative;
+  p {
+    font-family: "Cinzel", serif;
+    font-size: 24px;
+    z-index: 1;
+    position: relative;
+  }
+  .overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.256);
+    width: 100%;
+    height: 100%;
+  }
+}
+h2 {
+  font-family: "Cinzel", serif;
+  font-size: 32px;
+  font-weight: 400;
+  & + p {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+  }
+}
+.products_container {
+  width: 60%;
+  margin: auto;
+}
+.filter {
+  margin: 50px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.products {
+  display: flex;
+  gap: 20px;
+  .btns {
+    display: flex;
+    justify-content: space-between;
+    button {
+      padding: 10px 20px;
+      background-color: transparent;
+      border-radius: 0.4rem;
+      border: 2px solid gray;
+      background-color: black;
+      color: red;
+      cursor: pointer;
+    }
+  }
+}
+.our_products {
+  text-align: center;
+  margin: 50px 0px;
+  line-height: 40px;
+  button {
+    border: none;
+    background-color: transparent;
+    color: #8a006f;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+  }
+}
+.infos {
+  text-align: center;
+  margin-top: 20px;
+  line-height: 30px;
+  font-family: "Roboto", sans-serif;
+  h3 {
+    font-size: 18px;
+    font-weight: 500;
+    & + p {
+      font-size: 16px;
+      color: gray;
+    }
+  }
+}
+input{
+    padding: 10px 20px;
+    background-color: black;
+    border-radius: 0.3rem;
+    border-bottom: 2px solid red;
+    color: white;
+    &:focus{
+        outline: none;
+    }
+}
+.sort_btns{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    button{
+        padding: 10px 20px;
+        background-color: black;
+        border: 2px solid gray;
+        color: red;
+        cursor: pointer;
+    }
+}
+h4 {
+  color: #8a006f;
+}
+
+.card {
+  background-color: #f3f4f5;
+  width: 100%;
+  img {
+    width: 100%;
+  }
+  i{
+    font-size: 24px;
+    color: red;
+  }
+}
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 80px;
+  width: 80%;
+  text-align: center;
+  z-index: 1;
+}
+.wines {
+  margin-top: 50px;
+}
+.overlay2{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.256);
+    width: 100%;
+    height: 100%;
+}
+.wines_div {
+  background-image: url("https://preview.colorlib.com/theme/wines/images/hero_2.jpg");
+  height: 500px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: relative;
+  p {
+    font-family: "Cinzel", serif;
+    font-size: 24px;
+    z-index: 1;
+  }
+}
+.persons {
+  padding: 100px 0px;
+  display: flex;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 60%;
+  margin: auto;
+  .person {
+    margin-bottom: 30px;
+    text-align: center;
+    p {
+      padding: 30px 0px;
+      font-family: "Cinzel", serif;
+      font-size: 20px;
+      color: gray;
+    }
+    img {
+      border: 5px solid #68034d;
+      width: 25%;
+      border-radius: 50%;
+    }
+  }
+}
+sup{
+    font-size: 14px;
+}
+.all_cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 60%;
+  margin: auto;
+  gap: 20px;
+  .section_card {
+    img {
+      width: 100%;
+    }
+    h3 {
+      font-family: "Cinzel", serif;
+      font-size: 20px;
+    }
+    p {
+      font-family: "Roboto", sans-serif;
+      color: gray;
+      & + p {
+        font-family: "Roboto", sans-serif;
+        font-size: 12.8px;
+        color: black;
+      }
+    }
+    .writes {
+      line-height: 30px;
+      margin-top: 30px;
+    }
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .products,
+  .persons,
+  .all_cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  h1 {
+    font-size: 32px;
+  }
+}

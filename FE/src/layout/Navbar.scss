@@ -1,0 +1,40 @@
+header{
+    padding: 25px 0px;
+    border-bottom: 1px solid rgb(233, 233, 233);
+    .img{
+        text-align: center;
+        margin-bottom: 40px ;
+    }
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    ul{
+        display: flex;
+        gap: 20px;
+        text-transform: uppercase;
+        li{
+            font-family: "Cinzel", serif;
+            font-size: 12.8px;
+            a{
+                color: black;
+            }
+        }
+    }
+}
+.menu{
+    background-color: transparent;
+    border: none;
+    display: none;
+}
+@media only screen and (max-width: 990px) {
+    nav{
+        ul{
+            display: none;
+        }
+    }
+    .menu{
+        display: inline;
+    }
+  }
